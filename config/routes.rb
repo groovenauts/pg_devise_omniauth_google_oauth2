@@ -1,11 +1,13 @@
 Rails.application.routes.draw do
+  get 'top/index'
+
   namespace :users do
   get 'omniauth_callbacks/google_oauth2'
   end
 
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
-  root to: "rails_admin/main#top" # TODO Change top page
+  root to: "devise/sessions#new"
 
 
   # The priority is based upon order of creation: first created -> highest priority.
