@@ -45,6 +45,7 @@ end
 
 gem 'twitter-bootstrap-rails'
 gem 'devise'
+gem "omniauth-google-oauth2"
 gem 'kaminari'
 gem 'rails_admin'
 group :development, :test do
