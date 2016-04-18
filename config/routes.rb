@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   root to: "rails_admin/main#top" # TODO Change top page
 
 
