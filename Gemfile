@@ -42,3 +42,28 @@ group :development do
   gem 'web-console', '~> 2.0'
 end
 
+
+gem 'twitter-bootstrap-rails'
+gem 'devise'
+gem 'kaminari'
+gem 'rails_admin'
+group :development, :test do
+  gem 'rspec'
+  gem 'rspec-rails'
+  gem 'simplecov', require: false
+  gem 'simplecov-rcov', require: false
+  gem 'pry-rails'
+  gem 'pry-byebug'
+  gem 'pry-stack_explorer'
+  gem 'fuubar'
+  gem 'factory_girl'
+  gem 'factory_girl_rails'
+  gem 'annotate'
+  gem 'rails_best_practices'
+end
+
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'schema_comments'
+end
